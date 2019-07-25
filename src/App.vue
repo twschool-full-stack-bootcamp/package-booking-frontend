@@ -21,10 +21,10 @@
           <!-- <router-link to="/about">其他服务</router-link> -->
           其他服务
           <el-menu-item-group>
-          <el-menu-item index="1-1"><router-link to="/about">包裹入库</router-link></el-menu-item>
+          <el-menu-item index="1-1"><router-link to="/pageStored">包裹入库</router-link></el-menu-item>
           </el-menu-item-group>
           <el-menu-item-group>
-          <el-menu-item index="1-1">预约取件</el-menu-item>
+          <el-menu-item index="1-1"><router-link to="/fetchPackage">预约取件</router-link></el-menu-item>
           </el-menu-item-group>
 
       </el-menu-item>

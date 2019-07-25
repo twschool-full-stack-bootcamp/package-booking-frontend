@@ -14,9 +14,14 @@ export default new Router({
       component: Home 
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('./views/About.vue')
+      path: '/pageStored',
+      name: 'pageStored',
+      component: () => import('./views/pageStored.vue')
+    },
+    {
+      path:'/fetchPackage',
+      name:'fetchPackage',
+      component:() =>import('./views/fetchPackage.vue')
     }
   ]
 })
