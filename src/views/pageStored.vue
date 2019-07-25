@@ -5,7 +5,7 @@
     <br><br>
     收 件 人：<el-input v-model="receiveName" style="width:45%" placeholder="请输入收件人姓名" ></el-input>
     <br><br>
-     电    话：<el-input v-model="phoneNumber" style="width:45% " placeholder="请输入电话" ></el-input>
+    <span style="margin-left: 260px;">电话：</span><el-input v-model="phoneNumber" style="width:45% " placeholder="请输入电话" ></el-input>
     <br><br>
     <el-button type="submit">入库</el-button>
     <el-button>取消</el-button>
