@@ -1,12 +1,42 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+
+      <el-row class="tac">
+       <el-col :span="3">
+      <el-menu
+      default-active="2"
+      class="el-menu-vertical-demo"
+      @open="handleOpen"
+      @close="handleClose">
+      <el-menu-item index="1">
+        <template slot="title">
+        <i class="el-icon-location"></i>
+        <router-link to="/">首页</router-link> 
+        </template>
+        <!-- <i class="el-icon-menu"></i>
+        <router-link to="/">首页</router-link> --> 
+        </el-menu-item>
+
+        <el-menu-item index="2">
+
+        <i class="el-icon-menu"></i>
+          <router-link to="/about">其他服务</router-link>
+
+          <el-menu-item-group>
+          <el-menu-item index="1-1">包裹入库</el-menu-item>
+          </el-menu-item-group>
+          <el-menu-item-group>
+          <el-menu-item index="1-1">预约取件</el-menu-item>
+          </el-menu-item-group>
+
+      </el-menu-item>
+      </el-menu>
+       </el-col>
+</el-row>
+
+    <router-view/> 
   </div>
-</template>
+</template> 
 
 <style lang="scss">
 #app {

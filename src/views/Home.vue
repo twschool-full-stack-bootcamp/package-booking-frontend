@@ -10,11 +10,12 @@
         <el-button type="info" round  @click="filter_not_reserved">未预约</el-button> 
         <el-button type="info" round  @click="add">添加</el-button>
     </p>
-    <el-table
-      :data="tableData"
-      style="width: 100%">
+    
+    <el-table 
+      :data="tableData" 
+      style="width: 80%">  
       <el-table-column
-        prop="date"
+        prop="orderId"
         label="运单号"
         width="180">
       </el-table-column>
@@ -24,11 +25,11 @@
         width="180">
       </el-table-column>
       <el-table-column
-        prop="address" 
+        prop="phoneNumber" 
         label="电话">
       </el-table-column>
       <el-table-column
-        prop="date"
+        prop="status"
         label="状态"
         width="180">
       </el-table-column>
@@ -38,7 +39,6 @@
         width="180">
       </el-table-column>
     </el-table>
-
   </div>
 </template>
 
@@ -49,15 +49,17 @@
 import Main from '@/components/Main.vue'
 
 
+
 export default {
   name: 'main',
   components: {
     Main
   },
-  data: function (){
-       return{
-           
-       } 
-    },
+  watch:{     
+    $route : 'getData'
+  },
+   tableData: [{
+     
+          }]
 }
 </script>
