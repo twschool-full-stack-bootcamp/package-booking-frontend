@@ -14,7 +14,7 @@ export default {
         Item
     },
     mounted:function(){
-        this.$store.dispatch('initItem')
+        this.$store.dispatch('initItem')   
     }
 }
 </script>
