@@ -2,16 +2,16 @@
   <div id="app">
 
       <el-row class="tac">
-       <el-col :span="3">
+       <el-col :span="4">
       <el-menu
       default-active="2"  
       class="el-menu-vertical-demo"
-      @open="handleOpen"
+      @open="handleOpen"  
       @close="handleClose">
       <el-menu-item index="1">
         <template slot="title">
         <i class="el-icon-location"></i>
-        <router-link to="/">首页</router-link> 
+        <router-link to="/">首页</router-link>
         </template>
         </el-menu-item>
 

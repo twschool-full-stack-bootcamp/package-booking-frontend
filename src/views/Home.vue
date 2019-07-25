@@ -7,7 +7,8 @@
         <el-button type="info" round  @click="filter_reserved">已预约</el-button>
         <el-button type="info" round  @click="filter_picked">已经取件</el-button> 
         <el-button type="info" round  @click="filter_not_reserved">未预约</el-button> 
-        <el-button type="info" round  @click="add">添加</el-button>
+        <!-- <el-button type="info" round  @click="add">添加</el-button> -->
+        <el-button type="warning"><router-link to="/addInfo">添加</router-link></el-button>
     </el-row>
     
     <el-table 
@@ -44,7 +45,6 @@
 
 
 <script>
-// @ is an alias to /src
 import Main from '@/components/Main.vue'
 
 
@@ -55,23 +55,12 @@ export default {
     Main
   },
   watch:{     
-    $route : 'getData'
+    $route :'getData'
   },
    data() {
         return {
-          tableData: [{
-            orderId: '1',
-            name: 'loch',
-            phoneNumber: '22',
-            status:'noPicked',
-            date:'2019/02/03'
-          }, {
-            orderId: '2',
-            name: 'lngo',
-            phoneNumber: '11',
-            status:'noPicked',
-            date:'2019/09/24'
-          }]
+          tableData: [{orderId: '1',name: 'loch',phoneNumber: '22',status:'noPicked',date:'2019/02/03'
+          }, {orderId: '2',name: 'lngo',phoneNumber: '11',status:'noPicked',date:'2019/09/24'}]
         }
       }
 }

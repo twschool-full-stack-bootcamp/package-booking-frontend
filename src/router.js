@@ -22,6 +22,10 @@ export default new Router({
       path:'/fetchPackage',
       name:'fetchPackage',
       component:() =>import('./views/fetchPackage.vue')
+    },{
+      path:'/addInfo',
+      name:'addInfo',
+      component:() =>import('./views/addInfo.vue')
     }
   ]
 })
