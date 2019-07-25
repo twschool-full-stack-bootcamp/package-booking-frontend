@@ -7,11 +7,6 @@ const instance = axios.create(
     }
 )
 
-
-
 const getAllPackages = () => instance.get('luggages')
 const addOrder = (luggage) => instance.post('luggages', luggage)
-export { getAllPackages, addOrder}    
-
-
-
+export { getAllPackages, addOrder}  

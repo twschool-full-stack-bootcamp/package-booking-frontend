@@ -21,7 +21,7 @@ export default new Vuex.Store({
     selectLuggage:(state,status)=>{
       return state.luggage.filter(mm => mm.status == status)
     }
-  },
+  }, 
   actions: {
       getData({commit}){
         getAllPackages.then(mm =>commit(resourceData),mm.data).catch(error => console.log(error))

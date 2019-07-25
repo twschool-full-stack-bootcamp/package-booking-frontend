@@ -13,9 +13,9 @@
     
     <el-table 
       :data="tableData" 
-      style="width: 80%">  
+      style="width: 80%"> 
       <el-table-column
-        prop="orderId"
+        prop="orderId"  
         label="运单号"
         width="180">
       </el-table-column>
@@ -25,7 +25,7 @@
         width="180">
       </el-table-column>
       <el-table-column
-        prop="phoneNumber" 
+        prop="phoneNumber"
         label="电话">
       </el-table-column>
       <el-table-column
