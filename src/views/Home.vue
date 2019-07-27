@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="Home">
+        <FilterBtn></FilterBtn>
+        <Item></Item>
+    </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import FilterBtn from './FilterBtn.vue'   
+import Item from './Item.vue'
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+    name:'Home',
+    components: {
+        FilterBtn,  
+        Item
+    },
+    mounted:function(){
+        this.$store.dispatch('initItem')   
+    }
 }
 </script>
+
